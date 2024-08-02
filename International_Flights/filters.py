@@ -7,4 +7,4 @@ class InternationalFlightsListFilter(filter.FilterSet):
     max_price = filter.NumberFilter(field_name="price", lookup_expr="gte")
     class Meta:
         model = InternationalFlight
-        fields = ["starting_point", "destination", "ticket_type", "departure_date", "return_date", "passengers", "price"]
+        fields = ["starting_point", "destination", "ticket_type", "departure_date", "return_date", "passengers"]
